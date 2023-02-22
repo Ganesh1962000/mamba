@@ -32,10 +32,13 @@
 	text-align: center;
 }
 .topbarleft i{
-	color: #1818d3a8;
+	color:  #428bca;
 }
 .topbarright{
 	display: none;
+}
+.topbarright a{
+	color: #5c768d;
 }
 /*top-end*/
 header{
@@ -49,7 +52,7 @@ header{
 }
 .title a{
 	text-decoration: none;
-	color: #5b5ba0;
+	color: #1c5c93;
 	font-size: 24px;
 	letter-spacing: 3px;
 	font-weight: normal;
@@ -57,13 +60,15 @@ header{
 .navbar{
 	display: none;
 }
+.navbar a{
+	color: #5c768d
+}
 .navicon i{
-	color: black;
 	font-size: 1.5rem;
 }
 .navbar a:hover{
-	color: blue;
-	transition: ease all 1s;
+	color: #428bca;
+	transition: ease all 0.5s;
 }
 /*768*/
 @media(min-width:768px){
@@ -84,15 +89,13 @@ header{
 	margin-left: 1rem;
 	font-size: 13px;
 }
-.topbarleft i{
-	color: #1818d3a8;
-}
 .topbarright{
 	display: block;
+	color: #5c768d;
 	letter-spacing: 0.7rem;
 }
 .topbarright a:hover{
-	color: #1818d3a8;
+	color: #428bca;
 	transition: all ease 1s;
 }
 /*top-end*/
@@ -144,9 +147,6 @@ header{
 	font-size: 13px;
 	margin-left: 1.3rem;
 }
-.topbarleft i{
-	color: #1818d3a8;
-}
 .topbarright{
 	display: block;
 	letter-spacing: 1rem;
@@ -166,7 +166,6 @@ header{
 }
 .title a{
 	text-decoration: none;
-	color: #5b5ba0;
 	font-size: 30px;
 	letter-spacing: 3px;
 	font-weight: normal;
@@ -191,8 +190,7 @@ header{
 /*-----header finish-----*/
 .firstsection{
 	width: 100%;
-	background-image: url(image/slide-1.jpg);
-	height: 80vh;
+	background-image: url(image/slide-2.jpg);
 	background-size: cover;
 	color: white;
 	position: relative;
@@ -202,7 +200,7 @@ header{
 	content:"";
 	width: 100%;
 	position: absolute;
-	background-color: black;
+	background-color: rgba(00,00,00,0.8);
 	opacity: 0.7;
 	top: 0;
 	bottom: 0;
@@ -211,17 +209,17 @@ header{
 	z-index: -1;
 }
 .maintext{
-	padding: 0.2rem 3rem;
+	padding: 1rem 2rem;
 }
 .maintext h1{
 	font-size: 1.8rem;
 	font-weight: bold;
 }
 .maintext p{
-	font-size: 0.9rem;
-	margin-top: 1.3rem;
+	font-size: 0.7rem;
+	margin-top: 1.2rem;
 	letter-spacing: 0.3px;
-	line-height: 1.2rem;
+	line-height: 1rem;
 	color: #f7f5f5;
 }
 .readbut{
@@ -229,7 +227,7 @@ header{
 	padding: 10px 35px;
 	border-radius: 5px;
 	color: white;
-	background-color: #6a6af7;
+	background-color: #428bca;
 	margin-top: 1rem;
 	margin-left: 0.5rem;
 }
@@ -251,6 +249,9 @@ header{
 }
 /*1024*/
 @media(min-width:1024px){
+.firstsection{
+	height: 90vh;
+}
 .maintext{
 	padding: 10rem 30rem 0rem 1rem ;
 }
@@ -313,7 +314,7 @@ header{
 	font-weight: bold;
 	text-align: center;
 	margin: 0.5rem 0rem 1.8rem 0rem;
-	color: #36366a;
+	color: #5c768d;
 }
 .headabout p{
 	font-size: 1rem;
@@ -341,7 +342,7 @@ header{
 	border-radius: 5px;
 	padding: 1.4rem;
 	background-color: #f1f7fb;
-	color: blue;
+	color: #428bca;
 	margin-right: 1.5rem;
 }
 .abouticon i:hover{
@@ -355,7 +356,7 @@ header{
 	font-size: 1.1rem;
 	margin-bottom: 1rem;
 	font-weight: bold;
-	color: #424267;
+	color: #343a40;
 }
 .lorem p{
 	font-size: 0.9rem;
@@ -390,7 +391,6 @@ header{
 	font-weight: bold;
 	text-align: center;
 	margin: 0.5rem 0rem 1.8rem 0rem;
-	color: #36366a;
 }
 .headabout p{
 	font-size: 1rem;
@@ -415,8 +415,6 @@ header{
 .lorem h4{
 	font-size: 1.1rem;
 	margin-bottom: 1rem;
-	font-weight: bold;
-	color: #424267;
 }
 }
 /*-1024-*/
@@ -445,7 +443,6 @@ header{
 	font-weight: bold;
 	text-align: center;
 	margin: 0rem 0rem 1.5rem 0rem;
-	color: #36366a;
 }
 .headabout p{
 	font-size: 1rem;
@@ -473,8 +470,6 @@ header{
 .lorem h4{
 	font-size: 1.1rem;
 	margin-bottom: 1rem;
-	font-weight: bold;
-	color: #424267;
 }
 }
 /*-----secondsection finish-----*/
@@ -575,11 +570,12 @@ header{
 	font-size: 2.3rem;
 	font-weight: bold;
 	color: #1c5c93;
-	padding-bottom: 0.8rem;
+	padding-bottom: 0.3rem;
 }
-..numberbox p{
-	font-size: 0.9rem;
-    padding-top: 2rem;
+.numberbox p{
+	font-size: 1rem;
+    padding-top: 0.8rem;
+	color: #444444;
 }
 /*--768--*/
 @media(min-width:768px){
@@ -625,7 +621,7 @@ header{
 }
 /*----fourthsection finish----*/
 .fivethsection{
-	padding: 3.5rem 0rem 1.6rem 0rem;
+	padding: 6rem 0rem 1.6rem 0rem;
 }
 .services h1{
 	text-align: center;
@@ -645,7 +641,7 @@ header{
 }
 .servicon{
 	font-size: 2rem;
-	color: blue;
+	color: #428bca;
 	height: 80px;
 	width: 80px;
 	display: flex;
@@ -665,7 +661,7 @@ header{
 	position: relative;
 	width: 13%;
 	height: 2px;
-	background-color: blue;
+	background-color: #428bca;
 	border-radius: 10px;
 	margin: auto;
 	display: flex;
@@ -701,10 +697,12 @@ header{
 	padding: 0rem 0.5rem 2.2rem 0.5rem;
 }
 }
+
 /*--fivethsection finish---*/
+
 .sixthsection{
 	background-color: rgb(245, 249, 252);
-	padding: 3.5rem 0rem 2.5rem 0rem;
+	padding: 6rem 0rem 2.5rem 0rem;
 }
 .portfolio{
 	text-align: center;
@@ -748,7 +746,7 @@ header{
 	transition: ease all 1s;
 }
 .pofowrap{
-	margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+	margin-bottom: 1.5rem;
 	position: relative;
 	overflow: hidden;
 }
@@ -804,11 +802,10 @@ header{
 .portfolioioflex{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2%;
+	column-gap: 3%;
 }
 .pofowrap{
-	width: 46%;
-	margin-bottom: 0rem;
+	width: 48%;
 }
 }
 /*--1024--*/
@@ -817,14 +814,15 @@ header{
 .portfolioioflex{
 	display: flex;
 	flex-wrap: wrap;
+	column-gap: 2%;
 }
 .pofowrap{
-	width: 30%;
+	width: 32%;
 }
 }
 /*-----sixsection finish-----*/
 .seventhsection{
-	padding: 4rem 0rem 1.5rem 0rem;
+	padding: 6rem 0rem 1.5rem 0rem;
 }
 .team{
 	text-align: center;
@@ -984,7 +982,7 @@ header{
 }
 /*----eighthsection finish-----*/
 .ninethsection{
-	padding: 3.5rem 0rem 3.5rem 0rem;
+	padding: 6rem 0rem 3.5rem 0rem;
 }
 .contact h1{
 	font-size: 2rem;
